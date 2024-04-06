@@ -19,5 +19,5 @@ test('Create Issue', async () => {
 	const response = await main(resource, teamId, title)
 
 	// assertions here
-	expect(response.success).toBe(true)
+	expect(response.title).toBe(title)
 })

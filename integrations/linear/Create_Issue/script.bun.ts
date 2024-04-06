@@ -12,5 +12,5 @@ export async function main(resource: Linear, teamId: string, title: string) {
 		title
 	})
 
-	return createIssue
+	return createIssue.issue
 }

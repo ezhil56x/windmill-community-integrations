@@ -10,5 +10,5 @@ export async function main(resource: Linear, issueId: string, title: string) {
 
 	const updatedIssue = await linearClient.updateIssue(issueId, { title })
 
-	return updatedIssue
+	return updatedIssue.issue
 }

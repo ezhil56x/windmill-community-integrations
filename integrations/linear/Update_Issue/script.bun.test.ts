@@ -28,5 +28,5 @@ test('Update Issue', async () => {
 	const response = await main(resource, issueId, title)
 
 	// assertions here
-	expect(response.success).toBe(true)
+	expect(response.title).toBe(title)
 })
