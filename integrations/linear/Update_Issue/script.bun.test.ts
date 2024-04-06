@@ -27,6 +27,9 @@ test('Update Issue', async () => {
 	console.log('TEST: Running main function')
 	const response = await main(resource, issueId, title)
 
+	const getIssue = await linearClient.issue(issueId)
+	const fetchTitle = getIssue?.title
+
 	// assertions here
-	expect(response.title).toBe(title)
+	expect(fetchTitle).toBe(title)
 })
